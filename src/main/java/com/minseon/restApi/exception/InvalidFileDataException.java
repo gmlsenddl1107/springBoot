@@ -1,0 +1,12 @@
+package com.minseon.restApi.exception;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.ResponseStatus;
+
+@ResponseStatus(HttpStatus.BAD_REQUEST)
+public class InvalidFileDataException extends RuntimeException {
+
+    public InvalidFileDataException(String message){
+        super(message);
+    }
+}
